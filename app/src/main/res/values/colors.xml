@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#84241e</color>
+    <color name="purple_500">#901717</color>    <!-- colorPrimary-->
+    <color name="purple_700">#952f2f</color>    <!-- colorPrimaryVarient-->
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorAccent">#84241e</color>
+    <color name="goods_truck_background">#ffffff</color>
+    <color name="gray">#c0c0c0c0</color>
+
+    <color name="myColor">#901717</color>
+    <color name="myColor2">#84241e</color>
+    <color name="lightGrey">#c2c2c2</color>
+
+    <color name="logo_color">#c01a1a</color>
+    <color name="logo_color2">#c01a1a</color>
+
+    <color name="textColor">#323033</color>
+    <color name="colorPrimary">#84241e</color>
+    <color name="customStatusBarColor">#952f2f</color>
+
+    <color name="neonGreen">#74d068</color>
+    <color name="hyperlinkBlue">#1274d0</color>
+    <color name="colorDivider">#b8b8b8</color>
+</resources>

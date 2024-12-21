@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myappr.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.example.myappr.ui.home.MyorderFragment"
+        android:label="@string/my_order"
+        tools:layout="@layout/fragment_myorder" />
+    <fragment
+        android:id="@+id/nav_offer"
+        android:name="com.example.myappr.ui.home.OfferFragment"
+        android:label="@string/offer"
+        tools:layout="@layout/fragment_offer"
+        />
+    <fragment
+        android:id="@+id/nav_wallet"
+        android:name="com.example.myappr.ui.home.WalletFragment"
+        android:label="@string/wallet"
+        tools:layout="@layout/fragment_wallet"
+        />
+    <fragment
+        android:id="@+id/nav_complains"
+        android:name="com.example.myappr.ui.home.ComplaintFragment"
+        android:label="@string/complaints"
+        tools:layout="@layout/fragment_complaint"
+        />
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="com.example.myappr.ui.home.ContactUsFragment"
+        android:label="@string/contact_us"
+        tools:layout="@layout/fragment_contact_us"
+        />
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_rate_app"-->
+    <!--        android:label="@string/rate_app"-->
+    <!--        app:destination="@id/nav_home"-->
+    <!--        />-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_invite_friend"-->
+    <!--        android:label="@string/invite_friend"-->
+    <!--        app:destination="@id/nav_home"-->
+    <!--        />-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_provider_app"-->
+    <!--        android:label="@string/provider_app"-->
+    <!--        app:destination="@id/nav_home"-->
+    <!--        />-->
+
+
+</navigation>

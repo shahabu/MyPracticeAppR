@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView android:id="@+id/logo"
+        android:layout_width="200.0dp"
+        android:layout_height="200.0dp"
+        android:src="@mipmap/ic_logow"
+        app:layout_constraintBottom_toBottomOf="@+id/first_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carTransfer"
+        android:background="@drawable/ic_rounded_white_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="68.0dp"
+        android:layout_marginTop="40.0dp"
+        android:layout_marginBottom="20.0dp"
+        app:cardCornerRadius="40.0dp"
+        app:cardElevation="2.0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:minWidth="0.0dp"
+            android:minHeight="0.0dp"
+            android:text="@string/text_transfer_car"
+            android:drawablePadding="55.0dp"
+            android:drawableStart="@drawable/ic_route"
+            android:layout_marginStart="70.0dp"
+            android:layout_marginEnd="70.0dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/moterbike"
+        android:background="@drawable/ic_rounded_white_bg"
+        android:layout_width="0.0dp"
+        android:layout_height="68.0dp"
+        android:layout_marginTop="40.0dp"
+        android:layout_marginBottom="20.0dp"
+        app:cardCornerRadius="40.0dp"
+        app:cardElevation="2.0dp"
+        app:layout_constraintEnd_toEndOf="@id/carTransfer"
+        app:layout_constraintStart_toStartOf="@id/carTransfer"
+        app:layout_constraintTop_toBottomOf="@id/carTransfer">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/text_motorbike"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:minWidth="0.0dp"
+            android:minHeight="0.0dp"
+            android:text="@string/text_motorbike"
+            android:drawablePadding="0.0dp"
+            android:drawableStart="@mipmap/ic_bike" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/transferGoods"
+        android:background="@drawable/ic_rounded_white_bg"
+        android:layout_width="0.0dp"
+        android:layout_height="68.0dp"
+        android:layout_marginTop="40.0dp"
+        android:layout_marginBottom="20.0dp"
+        app:cardCornerRadius="40.0dp"
+        app:cardElevation="2.0dp"
+        app:layout_constraintEnd_toEndOf="@id/moterbike"
+        app:layout_constraintStart_toStartOf="@id/moterbike"
+        app:layout_constraintTop_toBottomOf="@id/moterbike">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/textTransferGoods"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:minWidth="0.0dp"
+            android:minHeight="0.0dp"
+            android:text="@string/text_goods"
+            android:drawablePadding="20.0dp"
+            android:drawableStart="@mipmap/ic_truck_goods" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nearestVehicle"
+        android:background="@drawable/ic_rounded_white_bg"
+        android:layout_width="0.0dp"
+        android:layout_height="68.0dp"
+        android:layout_marginTop="40.0dp"
+        android:layout_marginBottom="20.0dp"
+        app:cardCornerRadius="40.0dp"
+        app:cardElevation="2.0dp"
+        app:layout_constraintEnd_toEndOf="@id/transferGoods"
+        app:layout_constraintStart_toStartOf="@id/transferGoods"
+        app:layout_constraintTop_toBottomOf="@id/transferGoods"
+        >
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/text_nearestVehivle"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:minWidth="0.0dp"
+            android:minHeight="0.0dp"
+            android:text="@string/text_nearest_vehicle"
+            android:drawablePadding="20.0dp"
+            android:drawableStart="@drawable/ic_truck" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@id/first_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
