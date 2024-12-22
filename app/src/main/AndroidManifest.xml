@@ -15,10 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAppR"
         tools:targetApi="31">
+
         <activity
             android:name=".WebActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".OrderDetailsActivity"
             android:exported="false"

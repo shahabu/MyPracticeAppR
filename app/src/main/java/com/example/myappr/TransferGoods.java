@@ -3,6 +3,7 @@ package com.example.myappr;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -39,11 +40,19 @@ public class TransferGoods extends AppCompatActivity {
         });
 
 
+        EditText inputField = findViewById(R.id.et_message);
         Button sendOrder = findViewById(R.id.btn_sendOrder);
         sendOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Order submitted successfully", Toast.LENGTH_SHORT).show();
+
+                String inputText = inputField.getText().toString().trim();
+                //  Check the condition
+                if (inputText.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Please enter your delivery instruction", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), "Order submitted successfully", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
