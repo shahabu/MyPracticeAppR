@@ -41,6 +41,13 @@
         tools:layout="@layout/fragment_contact_us"
         />
 
+    <fragment
+        android:id="@+id/nav_privacy_policy"
+        android:name="com.example.myappr.ui.home.PrivacyPolicyFragment"
+        android:label="@string/privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy"
+        />
+
     <!--    <fragment-->
     <!--        android:id="@+id/nav_rate_app"-->
     <!--        android:label="@string/rate_app"-->
