@@ -1,14 +1,20 @@
 package com.example.myappr;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.cardview.widget.CardView;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -27,6 +33,33 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //  Disable Night Mode Globally
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+//        // Alert dialog
+//        Dialog dialog = new Dialog(this);
+//        dialog.setContentView(R.layout.alert_dialog);
+//        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+//
+//        Button updateButton = dialog.findViewById(R.id.update_button);
+//        updateButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String appPackageName = "com.nasil.userapp"; // Actual app package name
+//                String appPlayStoreLink = "https://play.google.com/store/apps/details?id=" + appPackageName;
+//                // Redirect user to the Play Store to rate the app
+//                try {
+//                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName));
+//                    startActivity(intent);
+//                } catch (Exception e) {
+//                    // Fallback if Play Store is not installed
+//                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(appPlayStoreLink));
+//                    startActivity(intent);
+//                }
+//            }
+//        });
+//        dialog.show();
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

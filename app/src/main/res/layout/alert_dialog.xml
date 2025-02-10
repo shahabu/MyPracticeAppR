@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_background"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingStart="65dp"
+    android:paddingEnd="55dp"
+    android:paddingBottom="30dp"
+    android:layout_gravity="center"
+    android:elevation="5dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="تحديث جديد متاح"
+        android:textColor="@color/myColor"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="24sp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"
+        android:text="جينا بالجديد"
+        android:textColor="@color/myColor"
+        android:textSize="20sp" />
+
+    <!-- First Feature Row -->
+    <TextView
+        android:id="@+id/bike_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏍️ نقل دراجتك النارية لاتشيل همه"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"/>
+    <!-- Second Feature Row -->
+
+    <TextView
+        android:id="@+id/truck_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚚 ونقل بضائعك صار امره سهل"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="حدث التطبيق"
+        android:backgroundTint="@color/myColor"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@drawable/rounded_outlined_bg"
+        android:elevation="5dp" />
+
+</LinearLayout>

@@ -8,16 +8,31 @@
     android:background="@color/white"
     tools:context=".ProfileActivity">
 
-    <!-- ScrollView to make the content scrollable -->
-    <android.widget.ScrollView
+    <!-- Toolbar at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:titleTextColor="@color/white"
+        android:background="@color/purple_500"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <!-- Main Content Container (LinearLayout wrapped inside ScrollView) -->
+    <!-- ScrollView for scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+    <!-- Main Content Container (LinearLayout wrapped inside ScrollView) -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -194,6 +209,6 @@
                     android:textColor="@android:color/white" />
             </LinearLayout>
         </LinearLayout>
-    </android.widget.ScrollView>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
